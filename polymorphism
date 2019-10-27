@@ -1,0 +1,32 @@
+class rectangle:
+	def area(self):
+		a=int(input("Enter length of rectangle"))
+		b=int(input("Enter breadth of rectanlge"))
+		return a*b
+class square:
+	def area(self):
+		s=int(input("Enter the side of square"))
+		return s*s
+class circle:
+	def area(self):
+		r=int(input("Enter the radius of circle"))
+		return 3.14*r*r
+class find:
+	def execute(self,sa):
+		so=sa.area()
+		print("Area is :",end=" ")
+		print(so)
+
+print("MENU")
+print("1  : Area of Rectangle")
+print("2  :  Area of Square")
+print("3  : Area of Circle")
+i=int(input("Enter ypur choice"))
+if i==1:
+	obj=rectangle()
+if i==2:
+	obj=square()
+if i==3:
+	obj=circle()
+ob=find()
+ob.execute(obj)
