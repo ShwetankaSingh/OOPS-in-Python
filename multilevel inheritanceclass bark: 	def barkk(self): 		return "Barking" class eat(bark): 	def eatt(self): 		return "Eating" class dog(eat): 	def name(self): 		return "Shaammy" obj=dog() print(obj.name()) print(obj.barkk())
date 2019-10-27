@@ -1,0 +1,12 @@
+class bark:
+	def barkk(self):
+		return "Barking"
+class eat(bark):
+	def eatt(self):
+		return "Eating"
+class dog(eat):
+	def name(self):
+		return "Shaammy"
+obj=dog()
+print(obj.name())
+print(obj.barkk())
