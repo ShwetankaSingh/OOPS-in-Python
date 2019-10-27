@@ -1,0 +1,28 @@
+//first program
+
+class first:
+	def __init__(self,a,b):
+		self.aa=a
+		self.bb=b
+	def sum(self):
+		return self.aa+self.bb
+obj=first(2,3)
+print(obj.sum())
+
+
+//second program
+
+class second:
+	def sub(self,a,b):
+		return a-b
+	def name(self):
+		ss=input("Enter name")
+		return ss
+l=[]
+for i in range(5):
+	obj2=second()
+	ac=int(input("Enter first number"))
+	bs=int(input("Enter second number"))
+	l.append(obj2.sub(ac,bs))
+print(l)
+print(obj2.name())
